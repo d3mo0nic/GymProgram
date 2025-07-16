@@ -2,9 +2,14 @@ from login import Gymlogin
 import json
 from gym import Gym, add_new_member
 
+# Main program execution
+# Initialize the Gymlogin class to handle user login
 login = Gymlogin()
 
+# Check if the user can log in
+# If login is successful, load gym members and display the main menu
 if login.check_login():
+    # Upload previously saved members from the json file
     Gym.load_file()
     while True:
         print("\n🔧 Main Menu:")
@@ -15,7 +20,8 @@ if login.check_login():
         print("5. Revoke Membership")
         print("6. Block Unpaid Member")
         print("0. Exit\n")
-
+        # Prompt the user for their choice
+        print("Please choose an option (1-6 or 0 to exit):")
         choice = input("")
         if choice == "1":
             Gym.show_members()
