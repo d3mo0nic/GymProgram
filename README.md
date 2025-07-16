@@ -26,6 +26,8 @@ This project contains 2 folders and 5 files
 - The ```login.py``` file contains the Gymlogin class, which handles user login and password management.
 
 ## Instalation
-To Reproduce this project you must run:
-
+To Reproduce this project you must dlone this repo by running following in terminal:
+1. 
     git clone https://github.com/d3mo0nic/GymProgram.git
+2. 
+    ```cd gym
